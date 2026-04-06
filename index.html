@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 20px; }
-        form { margin-top: 50px; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
-        input { margin: 10px; padding: 10px; width: 80%; }
-        button { background: #007bff; color: white; padding: 10px 20px; border: none; }
-    </style>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Student at Kristu Jayanti College</p>
 
-    <form id="contactForm">
-        <h3>Leave a Message (Database Test)</h3>
-        <input type="text" id="name" placeholder="Your Name" required><br>
-        <input type="text" id="msg" placeholder="Your Message" required><br>
-        <button type="submit">Send to Database</button>
-    </form>
+<body class="login-page">
 
-    <script src="main.js"></script>
+<div class="login-container">
+
+<img src="logo.png" alt="Logo">
+
+<h2>Login</h2>
+
+<form id="loginForm">
+
+<input type="text" id="username" placeholder="Username" required>
+
+<input type="password" id="password" placeholder="Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p id="error"></p>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
